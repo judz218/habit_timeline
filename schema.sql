@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS plan_item (
   sort_order INTEGER NOT NULL,
   source_habit_id INTEGER NULL,
   source_step_id INTEGER NULL,
+  parent_item_id INTEGER NULL,
   done_at TEXT NULL,
   FOREIGN KEY (day_plan_id) REFERENCES day_plan(id) ON DELETE CASCADE,
   FOREIGN KEY (source_habit_id) REFERENCES habit(id) ON DELETE SET NULL,
