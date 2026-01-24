@@ -52,38 +52,30 @@ python app.py habit-list
 
 ```
 python app.py step-list タスクのid
+```
+
 ### 計画作成
 
 - 日付ごとの作成
 
 ```
-
 python app.py plan-init YYYY-MM-DD
-
 ```
 
 - タイムラインに加える
 
 ```
-
 python app.py plan-add-habit YYYY-MM-DD タスクid --time hh:mm
-
 ```
 
 - タイムラインの表示
 
 ```
-
 python app.py plan-show YYYY-MM-DD
-
 ```
 
 - タスク完了
 
 ```
-
 python app.py plan-done タイムライン上のid
-
-```
-
 ```
